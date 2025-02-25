@@ -24,7 +24,7 @@ export default function mycourses() {
       </Head>
       <div className="mt-5">.</div>
       <p className="sectionHeader text-center mt-5">My Paid Courses</p>
-      <CoursesPaidEl />   
+      <CoursesPaidEl />
       {/* </div> */}
     </>
   );
