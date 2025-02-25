@@ -19,11 +19,11 @@ export default function TestimonialEl() {
         breakpoints={{
           480: {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 7,
           },
           640: {
-            slidesPerView: 1,
-            spaceBetween: 0,
+            slidesPerView: 2,
+            spaceBetween: 20,
           },
         }}
         autoplay={{
