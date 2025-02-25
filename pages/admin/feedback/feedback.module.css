@@ -1,0 +1,15 @@
+.barContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .bar {
+    width: 40px;
+    background-color: #3498db;
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+  }

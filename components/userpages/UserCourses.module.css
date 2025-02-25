@@ -1,0 +1,198 @@
+.CoursesRow {
+  margin: 30px 50px;
+}
+
+.CourseItem {
+  background: #ffd09c;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.CourseItem img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.tutorImage {
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.tutorLink {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tutorLink:hover {
+  font-weight: 600;
+  color: black;
+}
+
+.CourseInfoRow {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CourseInfoRow p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.CourseInfoRow img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.StarIcon {
+  color: orange;
+}
+
+.CourseName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.CoursePrice {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.EnrollButton {
+  background: #222;
+  border: 2px solid #222;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.EnrollButton:hover {
+  color: #222;
+  background: white;
+  border: 2px solid #222;
+}
+
+/* Dashboard */
+.Dashboard {
+  margin: 20px 50px;
+}
+.Progress {
+  /* display: flex; */
+  padding: 10px;
+  background-color: #ffeedb;
+  border-radius: 10px;
+}
+
+.ProgressPill {
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #ffd09c;
+  height: 25vh;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+  /* box-shadow: 5px 5px #ffaf54; */
+}
+
+.ProgressValue {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.ProgressImage {
+  height: 80px;
+  border-radius: 10px;
+}
+
+.ProgressMessage {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #ffe6ca;
+}
+
+.ProgressMessageText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.CourseName {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.2rem;
+  /* font-weight: 700; */
+}
+
+.Emoji {
+  font-size: 4rem;
+  margin: 0px;
+}
+
+.UserBanner {
+  border-radius: 10px;
+  background-color: #ffd09c;
+  padding: 10px;
+  /* text-align: right; */
+  box-shadow: 5px 8px #ffaf54;
+  margin-bottom: 10px;
+}
+
+.Icon {
+  font-size: 5rem;
+  border: 4px solid #000;
+  border-radius: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.Username {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .CoursesRow {
+    margin: 20px 0px;
+  }
+  .Dashboard {
+    margin: 0px;
+  }
+  .Progress {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .ProgressPill {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-bottom: 10px;
+    /* box-shadow: 5px 5px #ffaf54; */
+  }
+  .CourseName {
+    font-size: 2rem;
+    /* font-weight: 700; */
+  }
+  .ProgressImage {
+    height: 30vh;
+    width: 100%;
+  }
+  .UserBanner {
+    box-shadow: 0px 10px #ffaf54;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}

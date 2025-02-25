@@ -1,0 +1,75 @@
+.SignupForm input {
+  /* text-align: center; */
+  width: 25vw;
+}
+
+.SignupLogo {
+  margin-top: 60px;
+}
+
+.LoginSection {
+  /* background: #ff911a; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0 80px 0;
+}
+
+.LoginSection img {
+  height: 85px;
+  margin-bottom: 20px;
+}
+
+.separator {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+  margin: 15px 0 0 0;
+}
+
+.LoginForm {
+  text-align: center;
+  width: 25%;
+  min-width: 350px
+}
+
+.GoogleIcon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.FailedPassword {
+  background: lightcoral;
+}
+
+.FailedPassword:focus {
+  background: lightcoral;
+}
+.FailedPassword .icon {
+  display: none;
+}
+
+.SuccessPassword {
+  background: lightgreen;
+}
+
+.SuccessPassword .icon {
+  display: flex;
+}
+
+.SuccessPassword:focus {
+  background: lightgreen;
+}
+
+@media only screen and (max-width: 600px) {
+  .SignupForm input {
+    /* text-align: center; */
+    width: 90vw;
+  }
+  .LoginForm {
+    width: 90%;
+  }
+}

@@ -1,0 +1,252 @@
+.CoursesRow {
+    margin: 30px 50px;
+  }
+  
+  .CourseItem {
+    background: #ffd09c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    min-height: 70vh;
+  }
+  
+  .CourseItem img {
+    border-radius: 10px;
+    width: 100%;
+    height: 40vh;
+  }
+  
+  .badge {
+    color: black;
+    position: absolute;
+    transform: translate(25px, 35px);
+  }
+  
+  .tutorImage {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  
+  .tutorLink {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .tutorLink:hover {
+    font-weight: 600;
+    color: black;
+  }
+  
+  .CourseInfoRow {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .CourseInfoRow p {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .CourseInfoRow img {
+    border-radius: 50%;
+    width: 50px;
+  }
+  
+  .StarIcon {
+    color: orange;
+  }
+  
+  .CourseName {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0px 10px;
+    margin: 0px;
+  }
+  
+  .CoursePrice {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .EnrollButton {
+    background: #222;
+    border: 2px solid #222;
+    border-radius: 30px;
+    font-weight: 600;
+  }
+  .EnrollButton:hover {
+    color: #222;
+    background: white;
+    border: 2px solid #222;
+  }
+  
+  /* --------------------- Course Info Page --------------------- */
+  
+  .CourseDetails {
+    padding: 80px 15vw;
+    background: url("https://res.cloudinary.com/daecbszah/image/upload/v1677774297/hero%20slider/background_wh8mfp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .CourseDetailsName {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .CourseDetailsImage {
+    object-fit: cover;
+    /* object-position: top center; */
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .DetailRow {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .DetailRow img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .SidebarRow {
+    border-radius: 5px;
+    /* text-align: center; */
+    padding: 10px;
+    background: white;
+    /* display: block;
+    height: 600px;
+    position: fixed; */
+  }
+  
+  .CourseDetailsPrice {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .IntroVideo {
+    width: 100%;
+    height: 25vh;
+  }
+  
+  .CartAddButton {
+    margin-bottom: 10px;
+    width: 100%;
+    color: #222;
+    height: 50px;
+    background: white;
+    border: 2px solid #222;
+  }
+  
+  .CartAddButton:hover {
+    color: #ff911a;
+    font-weight: 600;
+    background: white;
+    border: 2px solid #222;
+  }
+  
+  .CartAddedButton {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    color: black;
+    background: white;
+    border: 2px solid #222;
+  }
+  
+  .CartAddedButton:hover {
+    color: #ff911a;
+    font-weight: 600;
+    background: white;
+    border: 2px solid #222;
+  }
+  
+  .BuyButton {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    background: #222;
+    border: none;
+  }
+  
+  .BuyButton:hover {
+    background: #ff911a;
+    color: white;
+    border: 2px solid #222;
+  }
+  
+  .subHeader {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .DescriptionSection {
+    margin-top: 30px;
+  }
+  
+  .DescriptionSubheader {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .CourseContent {
+    padding: 30px 15vw;
+  }
+  
+  .InstructorImage {
+    width: 100%;
+    border-radius: 100%;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .CoursesRow {
+      margin: 0px;
+    }
+    .CourseDetails {
+      padding: 30px 20px;
+      background-position: center;
+      background-repeat: repeat;
+      background-size: contain;
+    }
+    .CourseDetailsImage {
+      object-fit: contain;
+      width: 100%;
+      height: 30vh;
+      border-radius: 10px;
+    }
+    .CourseContent {
+      padding: 20px;
+    }
+    .InstructorImage {
+      width: 50%;
+    }
+    .CourseItem img {
+      height: 25vh;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .CourseItem img {
+      height: 30vh;
+    }
+  }
+  

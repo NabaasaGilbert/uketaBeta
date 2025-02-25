@@ -1,0 +1,38 @@
+.LoginSection {
+  background: #ff911a;
+  display: flex;
+  flex-direction: column;
+  /* height: 90vh; */
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.LoginSection img {
+  height: 85px;
+  margin-bottom: 20px;
+}
+
+.separator {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-bottom: 2px solid #fff;
+  margin: 15px 0 0 0;
+}
+
+.LoginForm {
+  text-align: center;
+  width: 25%;
+  min-width: 350px
+}
+
+.GoogleIcon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .LoginForm {
+    width: 90%;
+  }
+}

@@ -1,0 +1,35 @@
+.CommentStatusApproved {
+  color: green !important;
+  font-weight: 600;
+}
+.CommentStatus {
+  color: red !important;
+  font-weight: 600;
+}
+
+.ApproveButton {
+  border: none;
+  margin-right: 5px;
+  background: green;
+}
+.RejectButton {
+  border: none;
+  margin-right: 5px;
+  background: orange;
+}
+.DeleteButton {
+  border: none;
+  background: red;
+}
+
+.ApproveButton:hover {
+  background: darkgreen;
+}
+
+.RejectButton:hover {
+  background: darkorange;
+}
+
+.DeleteButton:hover {
+  background: darkred;
+}

@@ -1,0 +1,46 @@
+{
+  "instructordata": [
+    {
+      "id": "1",
+      "instructor": "Dr. Nataliey Bitature",
+      "image": "/trainers/nataliey.jpg",
+      "shortDesc": "I have seen how the principles taught in this course have changed lives, and I can’t wait      to see your progress. The changes will become evident to those around you, and the skills you learn will stay with you for a lifetime",
+      "rating": 4.4,
+      "reviews": 801,
+      "students": 951,
+      "courses": 3,
+      "desc": "Dr. Nataliey Bitature is the founder of HER, an online empowerment community for young African women. As a leadership and performance coach, she started HER to help other African women access the support and mentorship that helped her succeed. A lot of her work involves teaching women like you the tools to continue to support yourself and to grow. The courses she coaches feature all the core life skills that have personally empowered her in her career, which she continues to teach other African women.",
+      "website": "https://www.natalieybitature.com",
+      "youtube": "https://www.youtube.com/@DrNatalieyBitature",
+      "linkedin": "https://ug.linkedin.com/in/natalieybitature"
+    },
+    {
+      "id": "2",
+      "instructor": "Samantha Tinkamanyire",
+      "image": "/trainers/samantha.png",
+      "shortDesc": "I aim to provide structure where there is none, and to help others to do the same",
+      "rating": 0,
+      "reviews": 0,
+      "students": 0,
+      "courses": 1,
+      "desc": "Samantha is a Director at D&I Business Solutions. She also handles Strategic Partnerships and Business Development at Amani Partners. A business development professional who believes strongly in the importance of governance, she works with businesses to help provide strategic operational advice, aid in project management, improve business performance, and create future value. As an accomplished and results-driven business development professional, She has 10+ years of operational and leadership experience, specifically in the service industry. With a strong background in managing operations, teams, and processes.",
+      "website": "",
+      "youtube": "",
+      "linkedin": ""
+    },
+    {
+      "id": "3",
+      "instructor": "Daniel Choudry",
+      "image": "/trainers/daniel.jpg",
+      "shortDesc": "I make sure the participants easily understand my training programs and they take home easy learning.",
+      "rating": 0,
+      "reviews": 0,
+      "students": 0,
+      "courses": 1,
+      "desc": "Daniel is the Lead Trainer and Founding Director for Daniel Choudry Sales Institute, with 10 years experience in offering training about Sales and Customer Experience. He is also an author with 4 books about Sales and Customer Experience published. He has offered sales consultancy to over 20 companies in over 20 African countries. He has been recommended for training programs that meet industry requirements. As a coach, he guarantees a positive & valuable change in the participants’ behavior by the end of the training program.",
+      "website": "",
+      "youtube": "",
+      "linkedin": ""
+    }
+  ]
+}

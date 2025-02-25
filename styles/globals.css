@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+  overflow-x: hidden;
+  font-size: 1rem;
+  /* font-size: 0.9rem; */
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button:active {
+  background: #ff911a !important;
+}
+
+.sectionHeader {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.sectionSubheader {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.defaultButton {
+  margin: 0px !important;
+  padding: 10px 15px !important;
+  text-decoration: none !important;
+  border: none !important;
+  background: #222 !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
+
+.defaultButton:hover {
+  color: white !important;
+  /* font-weight: 700; */
+}
+
+.defaultPadding {
+  padding: 20px 100px;
+}
+
+.bgSection {
+  border-radius: 10px;
+  background: #ffd09c;
+}
+
+.breadcrumb {
+  display: flex;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: black;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.breadcrumb a:hover {
+  color: black;
+  font-weight: 600;
+}
+.navbar.bg-orange {
+  background: #ff911a !important;
+}
+.bg-orange {
+  background: #ff911a !important;
+}
+.bg-orange.dropdown-item {
+  background: #ff911a !important;
+}
+.btn-orange {
+  background: #ff911a !important;
+  color: #fff !important;
+}
+.text-orange {
+  color: #ff911a;
+}
+.text-orange:hover,
+.text-orange:active {
+  color: #ff911a;
+}
+.line-height-0 {
+  line-height: 0px;
+}
+.line-height-12 {
+  line-height: 12px;
+}
+.text-right {
+  text-align: right;
+}
+.text-wrap {
+  overflow-wrap: break-word; /* Standard syntax */
+  word-wrap: break-word; /* IE/Edge-specific syntax */
+}
+.justify-content-right {
+  justify-content: right !important;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+.ck-editor__editable {
+  min-height: 300px;
+}
+.certificate {
+  height: 900px;
+  width: 1200px;
+  /* height: 900px;
+  width: 1200px; */
+}
+.certificate-name {
+  padding-top: 270px;
+  font-size: 60px;
+}
+.certificate-text {
+  padding-top: 20px;
+  font-size: 25px;
+  line-height: 30px;
+}
+.certificate-text-id {
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 120px;
+}
+.container-custom-uketa {
+  max-width: 1655px !important;
+}
+.coach-signature-details {
+  /* margin-left: 325px; */
+  /* margin: 20px 0px 0px 325px; */
+  margin: -40px 0px 0px 325px;
+}
+.prof-signature-details {
+  margin-right: 350px;
+}
+.home-tiles {
+  background-color: #ff901a;
+  border-radius: 20px;
+}
+.clickable {
+  cursor: pointer;
+  /* color: #007bff; Change to your desired text color */
+  text-decoration: none; /* Underline the text when hovered */
+}
+
+/* Optional: Style for when the element is being hovered */
+.clickable:hover {
+  /* color: #0056b3; Change to your desired text color on hover */
+  color: #ff901a;
+  text-decoration: none; /* Remove the underline on hover */
+}
+
+.courseCompletionModal .modal-dialog {
+  max-width: 1200px;
+  width: 100% !important;
+  margin: 0 auto;
+}
+/* 
+.courseCompletionModal .modal-content {
+  width: 700px;
+} */
+
+.bg-light-custom {
+  background-color: #ffd09c59;
+}
+
+.courseVideoContainer {
+  position: fixed;
+  width: 30%;
+  top: 87px;
+}
+
+.sticky-item {
+  position: sticky;
+  top: 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+.fancy-header {
+  padding-left: 10px;
+  border-left: 5px solid #222;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.fancySidebarLink {
+  color: black;
+  text-decoration: none;
+}
+.fancySidebarItem,
+.blogContentItem {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  background: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+.blogContentItem > img {
+  width: 20%;
+  border-radius: 5px;
+}
+.fancySidebarItem > img {
+  width: 40%;
+  border-radius: 5px;
+}
+.fancySidebarInfo p {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 5px;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.PhoneInput input {
+  border: 0;
+  border: #fff;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+.PhoneInput input:focus,
+.PhoneInput input:active {
+  border: 0 !important;
+  border: #fff;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+.admin-nav-item {
+  color: #fff;
+}
+.signupPhoneWrap .PhoneInputCountryIcon > img {
+  margin: 0px 0px !important;
+  height: 15px;
+  border: 0px;
+}
+.signupPhoneWrap .PhoneInput input {
+  width: 18vw;
+}
+.ctx-menu a:active,
+.ctx-menu a:hover{
+  background-color: #ff911a !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .defaultPadding {
+    padding: 20px;
+  }
+  .admin-nav.navbar-nav > a.nav-link,
+  .admin-nav-item {
+    color: #000 !important;
+  }
+  .nav-toggler-admin {
+    background-color: #fff !important;
+    border: #fff !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .courseVideoContainer {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+  .admin-nav.navbar-nav > a.nav-link,
+  .admin-nav-item {
+    color: #000 !important;
+  }
+}

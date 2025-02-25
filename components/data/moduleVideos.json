@@ -1,0 +1,42 @@
+{
+  "lecturedata": [
+    {
+      "id": "1",
+      "lectures": {
+        "Meet Your Coach": "https://drive.google.com/file/d/1keSFgZhWGDTLPseEtoa7E6Pb-PcOlM0d/preview",
+        "Week 1: Self-Assessment": "https://drive.google.com/file/d/1GgVR-f1AfKQMHNKLkRJU0Q4SPYRQch5S/preview",
+        "Week 2: Goals, Habits and Routines": "https://drive.google.com/file/d/17yqDGm_Y70TuP5KiOyBSyKT1g6G7BEJ7/preview",
+        "Week 3: Self talk and Positivity": "https://drive.google.com/file/d/1FlxMZyhvTQq7xGkWIfC-zB2DDy5yFCBl/preview",
+        "Week 4: Emotional Intelligence and Communications": "https://drive.google.com/file/d/1YyZu3eF23XVF3oYSsg_fIrCTxjyl_k1Y/preview",
+        "Week 5: Mentors, Networking and Visibility": "https://drive.google.com/file/d/1It-k7CcjHN4C1i3ldKuJj1l5XGaH1H3D/preview",
+        "Week 6: You & Your Community": "https://drive.google.com/file/d/1q3-JWEXFzZvf9PbCALKm-k-453RQB3Wb/preview"
+      }
+    },
+    {
+      "id": "2",
+      "lectures": {}
+    },
+    {
+      "id": "3",
+      "lectures": {}
+    },
+    {
+      "id": "4",
+      "lectures": {
+        "1. Why It All Matters": "",
+        "2. Making First Impressions Count": "",
+        "3. Know Your Customer": "",
+        "4. Complaints": "",
+        "5. Online Customer Service": ""
+      }
+    },
+    {
+      "id": "5",
+      "lectures": {
+        "1. The Sales Mindset": "",
+        "2. The Sales Competency Wheel/The Sales Process": "",
+        "3. The Sales Execution": ""
+      }
+    }
+  ]
+}

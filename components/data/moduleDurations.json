@@ -1,0 +1,42 @@
+{
+  "lectureduration": [
+    {
+      "id": "1",
+      "lectures": {
+        "Meet Your Coach": 40,
+        "Week 1: Self-Assessment": 65,
+        "Week 2: Goals, Habits and Routines": 31,
+        "Week 3: Self talk and Positivity": 50,
+        "Week 4: Emotional Intelligence and Communications": 80,
+        "Week 5: Mentors, Networking and Visibility": 22,
+        "Week 6: You & Your Community": 75
+      }
+    },
+    {
+      "id": "2",
+      "lectures": {}
+    },
+    {
+      "id": "3",
+      "lectures": {}
+    },
+    {
+      "id": "4",
+      "lectures": {
+        "1. Why It All Matters": "",
+        "2. Making First Impressions Count": "",
+        "3. Know Your Customer": "",
+        "4. Complaints": "",
+        "5. Online Customer Service": ""
+      }
+    },
+    {
+      "id": "5",
+      "lectures": {
+        "1. The Sales Mindset": "",
+        "2. The Sales Competency Wheel/The Sales Process": "",
+        "3. The Sales Execution": ""
+      }
+    }
+  ]
+}

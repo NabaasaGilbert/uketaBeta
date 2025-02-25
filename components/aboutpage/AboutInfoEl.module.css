@@ -1,0 +1,70 @@
+.AboutSection {
+  margin-top: 60px;
+}
+
+.AboutHero {
+  background: url("https://res.cloudinary.com/daecbszah/image/upload/v1677774515/about/about-header_rdsrz9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+
+.AboutFooter {
+  background: url("https://res.cloudinary.com/daecbszah/image/upload/v1677774512/about/about-footer_aisrbq.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.AboutImage {
+  padding: 50px;
+  width: 100%;
+  /* height: 50vh; */
+}
+
+.GoalsImage {
+  height: 25vh;
+}
+
+.SectionRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TrainerSubsection {
+  padding: 10px;
+}
+
+.TrainerSubsection img {
+  height: 40vh;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .AboutSection {
+    text-align: center;
+  }
+  .AboutHero {
+    background-size: contain;
+    height: 35vh;
+  }
+
+  .AboutFooter {
+    background-size: contain;
+    height: 35vh;
+  }
+  .AboutImage {
+    padding: 0px;
+    height: 25vh;
+    width: 50%;
+  }
+  .TrainerSubsection img {
+    margin-bottom: 15px;
+  }
+}

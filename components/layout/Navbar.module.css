@@ -1,0 +1,119 @@
+.navbarLogo {
+  width: 5vw;
+  margin-right: 100px;
+}
+
+.navLink {
+  margin-top: 5px;
+  margin-right: 15px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+}
+.navLinkAdmin {
+  margin-top: 5px;
+  margin-right: 15px;
+  color: #ffffff !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+}
+
+.navLink::after {
+  content: "";
+  display: block;
+  /* margin-top: 10px; */
+  /* margin: auto; */
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+  background: #ff911a;
+}
+.bg-orange{
+  background: #ff911a !important;
+}
+.bg-orange.dropdown-item{
+  background: #ff911a !important;
+}
+.navLink:hover {
+  color: black;
+}
+
+.cartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 15px;
+  margin-right: 20px;
+  font-size: 1.5rem;
+  border: none;
+  color: #222;
+  background: none;
+}
+
+.cartButton:hover {
+  background: none;
+  color: #ff911a;
+}
+
+.Username {
+  margin-top: 10px;
+  font-weight: 600;
+  margin-right: 20px;
+  padding: 0px;
+}
+
+.hideCounter {
+  display: none;
+}
+
+.showCounter {
+  font-size: 0.8rem;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 15px;
+  right: 25px; */
+  width: 15px;
+  /* padding: 3px 5px; */
+  margin: 0px;
+  border-radius: 50%;
+  background: #ff911a !important;
+  color: white;
+}
+
+.navButton {
+  height: 40px !important;
+  margin-top: 5px;
+  margin-right: 10px;
+  border: 2px solid #ff911a;
+  background: white;
+  color: #222;
+  font-weight: 600;
+}
+
+.navButton:hover {
+  background: #ff911a;
+  border: 2px solid #222;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbarLogo {
+    width: 25vw;
+  }
+  /* .showCounter {
+    top: 290px;
+    left: 30px;
+  } */
+}

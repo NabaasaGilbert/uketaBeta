@@ -1,0 +1,91 @@
+.footerSection {
+  background: #222;
+  color: white;
+  padding: 30px;
+}
+
+.footerSection p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.Link {
+  text-decoration: none !important;
+  color: white;
+}
+
+.Link:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+  color: white;
+}
+
+.footerSubsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerSubsection a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.footerSubsection a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+  color: white;
+}
+
+.footerHeader {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  margin-bottom: 10px !important;
+}
+
+.copyrightSection {
+  font-size: 0.8rem;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyrightSection img {
+  height: 50px;
+}
+
+.copyrightLink {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.copyrightLink::after {
+  content: "";
+  display: block;
+  /* margin-top: 10px; */
+  /* margin: auto; */
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.copyrightLink:hover::after {
+  width: 100%;
+  background: #ff911a;
+}
+.copyrightLink:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerHeader {
+    margin-top: 10px !important;
+  }
+  .copyrightSection img {
+    margin-right: 20px;
+  }
+}

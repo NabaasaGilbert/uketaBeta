@@ -1,0 +1,68 @@
+.VideoPlayer {
+    height: 70vh;
+    width: 100%;
+  }
+  
+  .SidebarLink {
+    padding: 5px;
+    border-radius: 10px;
+    background: #ffbe78;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .SidebarLink p {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .LectureDetails {
+    padding: 50px 5vw;
+    background: url("https://res.cloudinary.com/daecbszah/image/upload/v1677774297/hero%20slider/background_wh8mfp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .SidebarLink:hover .SidebarPlayIcon {
+    transition: 0.5s;
+    color: white;
+  }
+  
+  .LectureLink {
+    display: flex;
+  }
+  
+  .ProgressRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ProgressBar {
+    height: 30px;
+    width: 90%;
+  }
+  
+  .QuizModal {
+    height: 90vh;
+  }
+  
+  .QuizFrame {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .QuizButton {
+    width: 700px !important;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .VideoPlayer {
+      height: 35vh;
+    }
+    .QuizButton {
+      width: 300px !important;
+    }
+  }
+  

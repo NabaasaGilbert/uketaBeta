@@ -1,0 +1,58 @@
+.InstructorDetails {
+  padding: 80px 15vw;
+}
+
+.InstructorRow {
+  text-align: left;
+}
+
+.InstructorImage {
+  border-radius: 50%;
+  height: 20vh;
+  margin-top: 30px;
+}
+
+.InstructorButton {
+  margin: 0px !important;
+  padding: 10px 15px !important;
+  text-decoration: none !important;
+  border: 2px solid #222 !important;
+  background: #fff !important;
+  color: black !important;
+  border-radius: 5px !important;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InstructorButton:hover {
+  color: white !important;
+  background: #222 !important;
+  /* font-weight: 700; */
+}
+
+.InstructorButtonIcon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.InstructorIcon {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .InstructorDetails {
+    padding: 30px 20px;
+  }
+  .InstructorRow {
+    text-align: center;
+  }
+  .InstructorImage {
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+}

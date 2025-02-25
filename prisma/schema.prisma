@@ -1,0 +1,337 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+  User              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId], map: "Account_userId_fkey")
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  text      String   @db.LongText
+  username  String
+  date      String
+  status    String
+  userEmail String
+  courseId  String
+  createdAt DateTime @default(now())
+  Course    Course   @relation(fields: [courseId], references: [id])
+  User      User     @relation(fields: [userEmail], references: [email])
+
+  @@index([courseId], map: "Comment_courseId_fkey")
+  @@index([userEmail], map: "Comment_userEmail_fkey")
+}
+
+model Course {
+  id              String            @id @default(cuid())
+  name            String
+  image           String?
+  shortDesc       String?           @db.LongText
+  longDesc        String?           @db.LongText
+  rating          String?
+  ratingCount     String?
+  studentCount    String?
+  updateDate      String?
+  introduction    String?           @db.LongText
+  moduleCount     String?
+  priceUGX        Int?
+  priceUSD        Int?
+  previewVideo    String?
+  paymentLink     String?
+  tutor           String
+  isPublished     Boolean           @default(false)
+  paymentId       String?
+  Comment         Comment[]
+  Instructor      Instructor        @relation(fields: [tutor], references: [id])
+  CourseProgress  CourseProgress[]
+  courses         CoursesOnUser[]
+  Lecture         Lecture[]
+  LectureProgress LectureProgress[]
+  // payment         Payment[]         @relation("PaymentCourses")
+  // Payment         Payment?          @relation(fields: [paymentId], references: [id])
+  // payments Payment[] @relation("PaymentToCourse")
+  // paymentId       String?
+  Review          Review[]
+  Feedback        Feedback[]
+
+  @@index([tutor], map: "Course_tutor_fkey")
+}
+
+model CourseProgress {
+  id        String   @id @default(cuid())
+  progress  String?  @db.VarChar(50)
+  duration  String   @db.VarChar(50)
+  createdAt DateTime @default(now())
+  courseId  String
+  userId    String
+  updatedAt DateTime @default(now()) @updatedAt
+  Course    Course   @relation(fields: [courseId], references: [id])
+  User      User     @relation(fields: [userId], references: [id])
+
+  @@index([courseId], map: "CourseProgress_courseId_fkey")
+  @@index([userId], map: "CourseProgress_userId_fkey")
+}
+
+model CoursesOnUser {
+  id       String @id @default(cuid())
+  userId   String
+  courseId String
+  Course   Course @relation(fields: [courseId], references: [id])
+  User     User   @relation(fields: [userId], references: [id])
+
+  @@unique([userId, courseId])
+  @@index([courseId], map: "CoursesOnUser_courseId_fkey")
+  @@index([userId], map: "CoursesOnUser_userId_fkey")
+}
+
+model Discount {
+  id      String @id @default(cuid())
+  code    String @unique
+  percent Int
+}
+
+model Instructor {
+  id                       String    @id @default(cuid())
+  instructor               String
+  shortDesc                String?   @db.LongText
+  desc                     String?   @db.LongText
+  image                    String?
+  rating                   String?
+  reviews                  String?
+  students                 String?
+  courses                  String?
+  website                  String?
+  youtube                  String?
+  linkedin                 String?
+  createdAt                DateTime  @default(now())
+  updatedAt                DateTime  @default(now()) @updatedAt
+  email                    String?
+  isActivated              Boolean   @default(false)
+  passwordResetToken       String?
+  passwordResetTokenExpiry DateTime?
+  role                     String    @default("instructor")
+  secret                   String?
+  signature                String?
+  Course                   Course[]
+}
+
+model Lecture {
+  id              String            @id @default(cuid())
+  title           String
+  activity        String?
+  description     String?           @db.LongText
+  videoUrl        String?           @db.LongText
+  duration        Float?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @default(now()) @updatedAt
+  courseId        String
+  Course          Course            @relation(fields: [courseId], references: [id])
+  LectureProgress LectureProgress[]
+  Quiz            Quiz?
+}
+
+model LectureProgress {
+  id        String   @id @default(cuid())
+  progress  String?  @db.VarChar(50)
+  createdAt DateTime @default(now())
+  lectureId String
+  userId    String
+  duration  String   @db.VarChar(50)
+  courseId  String
+  Course    Course   @relation(fields: [courseId], references: [id])
+  Lecture   Lecture  @relation(fields: [lectureId], references: [id], onDelete: Cascade)
+  User      User     @relation(fields: [userId], references: [id])
+}
+
+model Payment {
+  id                       String       @id @default(cuid())
+  flwTransactionId         String?
+  flwRef                   String?
+  textRef                  String?
+  amount                   Float?
+  narrative                String?      @db.LongText
+  createdAt                DateTime?    @default(now())
+  updatedAt                DateTime     @default(now()) @updatedAt
+  status                   String?
+  userId                   String
+  courseIds                String?
+  courses                  String?
+  currency                 String?
+  discountCode             String?
+  pesapalMerchant          String?
+  pesapalMerchantReference String?
+  pesapalOrderTrackingId   String?
+  pesapalPaymentMethod     String?
+  pesapalRedirectURL       String?
+  User                     User         @relation(fields: [userId], references: [id])
+  salesPersonId            String?
+  SalesPerson              SalesPerson? @relation(fields: [salesPersonId], references: [id], onDelete: Cascade)
+
+  @@index([userId], map: "Payment_userId_fkey")
+  @@index([salesPersonId], map: "Payment_salesPersonId_fkey")
+}
+
+model Quiz {
+  id        String   @id @default(cuid())
+  title     String
+  file      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+  lectureId String   @unique
+  Lecture   Lecture  @relation(fields: [lectureId], references: [id], onDelete: Cascade)
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  User         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId], map: "Session_userId_fkey")
+}
+
+// Define the enum for gender status
+enum Gender {
+  MALE
+  FEMALE
+}
+
+model User {
+  id                       String            @id @default(cuid())
+  name                     String?
+  email                    String?           @unique
+  secret                   String?
+  emailVerified            DateTime?
+  phone                    String?
+  dateOfBirth              DateTime?
+  gender                   Gender?
+  image                    String?
+  newsletter               String?
+  isActivated              Boolean           @default(false)
+  passwordResetToken       String?
+  passwordResetTokenExpiry DateTime?
+  role                     String            @default("student")
+  createdAt                DateTime          @default(now())
+  updatedAt                DateTime          @default(now()) @updatedAt
+  Account                  Account[]
+  Comment                  Comment[]
+  CourseProgress           CourseProgress[]
+  courses                  CoursesOnUser[]
+  LectureProgress          LectureProgress[]
+  Payment                  Payment[]
+  Session                  Session[]
+  Review                   Review[]
+  Feedback                 Feedback[]
+  companyId                String? // Add this field
+  company                  Company?          @relation(fields: [companyId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Blog {
+  id          String   @id @default(cuid())
+  title       String
+  description String   @db.LongText
+  image       String
+  createdAt   DateTime @default(now())
+}
+
+model Review {
+  id          String   @id @default(cuid())
+  review      String   @db.LongText
+  rating      Int      @default(0)
+  userId      String
+  User        User     @relation(fields: [userId], references: [id])
+  courseId    String
+  Course      Course   @relation(fields: [courseId], references: [id])
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now()) @updatedAt
+  isPublished Boolean  @default(true)
+}
+
+model Feedback {
+  id                          String   @id @default(cuid())
+  satisfactionRating          Int      @default(0) // Modify the default value as needed
+  platformAccessibilityRating Int      @default(0)
+  courseMaterialEngagement    Int      @default(0)
+  coachRating                 String
+  worksheetsHelpfulRating     Int      @default(0)
+  courseApplicability         Int      @default(0)
+  courseAffordability         Int      @default(0)
+  recommendToFriend           Boolean  @default(false)
+  feedbackComment             String?  @db.LongText
+  studentId                   String // Assuming this is the ID of the student
+  courseId                    String // Assuming this is the ID of the course
+  createdAt                   DateTime @default(now())
+  updatedAt                   DateTime @default(now()) @updatedAt
+  isPublished                 Boolean  @default(true)
+
+  User   User   @relation(fields: [studentId], references: [id])
+  Course Course @relation(fields: [courseId], references: [id])
+}
+
+model SalesPerson {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  trackingCode String   @unique
+  phone        String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @default(now()) @updatedAt
+
+  // Relationships
+  salesPersonTracking SalesPersonTracking[]
+  payments            Payment[]
+}
+
+model SalesPersonTracking {
+  id            String      @id @default(cuid())
+  salesPerson   SalesPerson @relation(fields: [salesPersonId], references: [id])
+  salesPersonId String
+  page          String?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @default(now()) @updatedAt
+}
+
+model Company {
+  id            String   @id @default(cuid())
+  name          String   @unique
+  logo          String?
+  contactPerson String?
+  address       String?
+  city          String?
+  country       String?
+  phone         String?
+  email         String?  @unique
+  website       String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  User          User[]
+}
