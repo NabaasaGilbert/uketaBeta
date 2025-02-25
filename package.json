@@ -60,7 +60,7 @@
     "playwright-core": "^1.50.1",
     "postmark": "^4.0.5",
     "prisma": "^6.4.1",
-    "puppeteer-core": "^24",
+    "puppeteer-core": "^10.1.0",
     "quill": "^2.0.3",
     "react": "19.0.0",
     "react-bootstrap": "^2.10.9",
