@@ -12,6 +12,35 @@ import Head from "next/head";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import { Analytics } from "@vercel/analytics/react";
 
+
+import { useEffect } from "react";
+import "../styles/globals.css";
+
+function MyApp({ Component, pageProps }) {
+    useEffect(() => {
+        // Disable right-click on videos
+        document.addEventListener('contextmenu', (event) => {
+            let target = event.target;
+            while (target) {
+                if (target.tagName === 'VIDEO') {
+                    event.preventDefault();
+                    return;
+                }
+                target = target.parentElement;
+            }
+        });
+    }, []);
+
+    return <Component {...pageProps} />;
+}
+
+export default MyApp;
+
+
+
+
+
+
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   // const router = new useRouter();
 
