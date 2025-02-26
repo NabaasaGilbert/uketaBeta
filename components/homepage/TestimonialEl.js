@@ -54,7 +54,7 @@ export default function TestimonialEl() {
               <p className={classes.swiperSlideHead}>Norah Nakidde</p>
               <p className={classes.swiperSlideDesc}>
                 “This course has changed the way I take each day. I have become
-                more productive and e􀆚cient at work and I feel ready to conquer
+                more productive and efficient at work and I feel ready to conquer
                 anything that comes my way.”
               </p>
             </Col>
