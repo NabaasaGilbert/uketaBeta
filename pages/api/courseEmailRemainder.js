@@ -82,7 +82,7 @@ module.exports = async (req, res) => {
         "<p>Thank you for choosing UKETA Learning. We look forward to assisting you and seeing you thrive in your course.</p>" +
         "<br> <br>" +
         "<p>Best regards,</p>" +
-        '<p style="font-weight: bold;">Rhea </p>' +
+        '<p style="font-weight: bold;">Patience</p>' +
         '<p style="font-weight: bold;">Customer Support Team</p>' +
         '<p style="font-weight: bold;">UKETA Learning</p>' +
         "</div>";
