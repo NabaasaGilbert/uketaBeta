@@ -102,7 +102,7 @@ export default function ContactFormEl(props) {
             Email
             <br />
             <span>
-              <a href="mailto:info@uketa.edu">info@uketa.online</a>
+              <a href="mailto:info@uketalearning.com">info@uketalearning.com</a>
             </span>
           </p>
         </div>
@@ -112,11 +112,13 @@ export default function ContactFormEl(props) {
             Phone
             <br />
             <span>
-              <a href="tel:+(256) 772 202 190">+(256) 776 906 319 </a>
+              <a href="tel:+256709734294">+256709734294 </a>
             </span>
           </p>
         </div>
       </Col>
     </Row>
   );
+}
+
 }
