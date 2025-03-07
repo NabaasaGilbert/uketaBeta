@@ -60,12 +60,13 @@ export default function FooterEl() {
           <a href="">
             <BiMap /> Plot 1 Water Lane, Naguru, Kampala
           </a>
-          <a href="tel:+256772202190">
+          <a href="tel:+256709734294">
             <BiPhone />
             {/* +256 772 202 190  */}
-            +256 776 906 319
+            {/* +256 776 906 319 */}
+    +256 709 734 294
           </a>
-          <a href="mailto:info@uketa.online">
+          <a href="mailto:info@uketalearning.com">
             <BiMailSend /> info@uketalearning.com
           </a>
           <div className="d-flex p-3">
@@ -116,14 +117,14 @@ export default function FooterEl() {
         </a>
         <div>
           <p>
-            ©Copyright <strong>Uketa</strong> 2022. All Rights Reserved.
+            ©Copyright <strong>Uketa</strong> 2025. All Rights Reserved.
           </p>
           <a
             className={classes.copyrightLink}
             target="_blank"
-            href="https://edgar256.github.io/"
+            href="https://gilbertnabaasa.info/"
           >
-            Developed By Edgar256
+            Maintained By Gilbert Nabaasa
           </a>
         </div>
       </div>
