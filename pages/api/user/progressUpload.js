@@ -119,10 +119,13 @@ async function addProgressData(req, res) {
             '<p>Please take some time to fill out our survey <a href="https://forms.gle/AK137CY3WC5aUW3M8">Link</a>.</p>' +
             "<p>Thank you for choosing UKETA Learning.</p> <br />" +
             "<p>Best regards,</p>" +
-            '<p style="font-weight: bold;">Rhea </p>' +
+            '<p style="font-weight: bold;">Patience</p>' +
             '<p style="font-weight: bold;">Customer Support Team</p>' +
             '<p style="font-weight: bold;">UKETA Learning</p>' +
-            '<a style="font-weight: bold;" href="www.uketalearning.com">www.uketalearning.com</a></div>';
+'<p style="font-weight: bold;"><a href="tel:+256 709 734294">+256 709 734294</a></p>' +
+'<p style="font-weight: bold;"><a href="mailto:info@uketalearning.com">info@uketalearning.com</a></p>' +
+'<a style="font-weight: bold;" href="www.uketalearning.com">www.uketalearning.com</a></div>'
+
 
           const response = await client.sendEmail({
             From: `admin@uketa.online`,
