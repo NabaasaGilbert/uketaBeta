@@ -10,7 +10,7 @@ async function contactFormSubmissionEmailHandler(req, res) {
   try {
     client.sendEmail({
       From: "admin@uketa.online",
-      To: "rhea@believerance.com",
+      To: "martha.nuwahereza@simbatelecom.com",
       Subject: `Uketa Contact Form Submission - ${data.name}`,
       HtmlBody: `<p>There was a submission on the Uketa App contact form with the following Information.</p><br/><strong>Fullname:</strong> ${data.name}<br/><strong>Email:</strong> ${data.email}<br/><strong>Subject:</strong> ${data.subject}<br/><strong>Message:</strong> ${data.message}<br/>`,
       TextBody: `Fullname: ${data.name}, Email: ${data.email}, Subject: ${data.subject}, Message: ${data.message}`,
