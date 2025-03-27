@@ -6,16 +6,3 @@
     }
   ]
 }
-
-
-{
-  "routes": [
-    {
-      "src": "/start",
-      "status": 301,
-      "headers": {
-        "Location": "https://uketalearning.com/start"
-      }
-    }
-  ]
-}
