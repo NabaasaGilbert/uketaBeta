@@ -5,10 +5,10 @@
       "schedule": "0 19 * * 3"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "^/start(/.*)?$",
-      "dest": "https://uketalearning.com/start$1"
+      "source": "/start(.*)",
+      "destination": "https://162.241.24.152/~simbapr1/uketalearning/start$1"
     }
   ]
 }
