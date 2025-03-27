@@ -15,5 +15,6 @@
       "status": 301,
       "headers": { "Location": "https://uketalearning.com/start$1" }
     }
+
   ]
 }
