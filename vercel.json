@@ -1,11 +1,4 @@
-{
-  "crons": [
-    {
-      "path": "/api/courseEmailRemainder",
-      "schedule": "0 19 * * 3"
-    }
-  ]
-}
+
 
 {
   "crons": [
