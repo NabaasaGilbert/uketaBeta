@@ -4,11 +4,5 @@
       "path": "/api/courseEmailRemainder",
       "schedule": "0 19 * * 3"
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/start(.*)",
-      "destination": "/api/start.js$1"
-    }
   ]
 }
