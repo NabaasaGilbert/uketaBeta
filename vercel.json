@@ -4,5 +4,11 @@
       "path": "/api/courseEmailRemainder",
       "schedule": "0 19 * * 3"
     }
+  ],
+  "routes": [
+    {
+      "src": "^/start(/.*)?$",
+      "dest": "https://uketalearning.com/start$1"
+    }
   ]
 }
