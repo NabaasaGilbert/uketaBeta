@@ -11,10 +11,10 @@
 {
   "routes": [
     {
-      "src": "^/start(/.*)?$",
+      "src": "/start",
       "status": 301,
       "headers": {
-        "Location": "https://uketalearning.com/start$1"
+        "Location": "https://uketalearning.com/start"
       }
     }
   ]
