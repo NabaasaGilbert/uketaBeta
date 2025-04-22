@@ -124,7 +124,7 @@ export default function FooterEl() {
             target="_blank"
             href="https://gilbertnabaasa.info/"
           >
-            Maintained By Gilbert Nabaasa
+            Site works by: The Simba Group of Companies.
           </a>
         </div>
       </div>
